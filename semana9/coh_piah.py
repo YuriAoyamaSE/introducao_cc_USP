@@ -82,7 +82,7 @@ def compara_assinatura(as_a, as_b):
     '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de similaridade nas assinaturas.'''
     somatorio = 0
     for i in range(6):
-        somatorio += abs(as_a[i] + as_b[i])
+        somatorio += abs(as_a[i] - as_b[i])
     similaridade = somatorio / 6
     return similaridade
 
